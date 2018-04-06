@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TMS - 사원관리시스템</title>
+  <link rel="stylesheet" href="D:/dev/tms/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+  <!-- 사원등록 -->
+  <header>
+    <h1>더조은사원관리</h1>
+  </header>
+  <section>
+    <div class="container">
+      <div class="row">
+        <nav class="col-sm-3">
+          <ul class="nav" data-spy="affix" data-offset-top="400">
+            <li><a href="list.html">사원목록</a></li>
+            <li><a href="insert.html">사원등록</a></li>
+            <label>관리자님(으)로 로그인</label>
+            <button type="button" class="btn btn-default" id="go_index">로그아웃</button>
+            <script>
+            $('#go_index').click(function(){
+              location.href='index.html';
+            })
+            </script>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="listV">
+          <form action="">
+            <label>사원번호 : </label>
+            <input type="text"><br>
+            <label>사원이름 : </label>
+            <input type="name"><br>
+            <label>비밀번호 : </label>
+            <input type="password"><br>
+            <label>부서명 : </label>
+            <input type="text"><br>
+            <label>부서번호 : </label>
+            <input type="text"><br>
+            <label>연봉 : </label>
+            <input type="text"><br>
+            <label>입사날짜 : </label>
+            <input type="calender"><br>
+    </div>
+    <div class="seleV">
+      <input type="button" value="등록" id="go_list">
+      <input type="reset" value="다시작성">
+      <input type="button" value="목록" id="go_lists">
+    </div>
+    <script>
+        $('#go_list').click(function(){
+          location.href='list.html';
+        })
+        $('#go_lists').click(function(){
+          location.href='list.html';
+        })
+    </script>
+
+    </form>
+    </div>
+
+  </section>
+  <footer><small>copyright&copy;song. All rights reserved.</small></footer>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+header h1{
+  margin: 0;
+  text-align: center;
+  padding: 30px;
+  background: rgb(189, 231, 214);
+  margin-bottom: 20px;
+}
+section div.container{
+  position: relative;
+  float: right;
+  width: 100%;
+  height: 20%;
+}
+nav ul li{
+  text-align: center;
+  float: left;
+}
+.nav{
+  margin-left: 300%;
+  height: 60px;
+  width: 600px;
+}
+thead{background: #e1ffd2;}
+tbody tr:nth-of-type(2n){background: rgba(225, 255, 210, 0.71);}
+
+.container_search{clear: both;float: right;margin-bottom: 10px;}
+.paging{text-align: center;}
+footer{text-align: center;}
+.container_form1{font-size: 15px;text-align: center;}
+.container_form2{text-align: center;margin-top: 10px;font-size: 15px;}
+.listV{text-align: center;}
+.seleV{text-align: center;padding: 10px;}
+.detail_view{margin-left: 5%;}
+.detail_view ul{text-decoration: none; list-style: none;text-align: center;}
+.golist{text-align: center;}
+.container{
+  text-align: center;
+  }
+.login_btn{padding: 10px;margin-left:60px;}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TMS - 사원관리시스템</title>
+  <link rel="stylesheet" href="D:/dev/tms/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <!-- 사원목록 -->
+  <header>
+    <h1>더조은사원관리</h1>
+  </header>
+  <section>
+
+    <div class="container">
+      <div class="row">
+        <nav class="col-sm-3">
+          <ul class="nav" data-spy="affix" data-offset-top="400">
+            <li><a href="list.html">사원목록</a></li>
+            <li><a href="insert.html">사원등록</a></li>
+            <label>관리자님(으)로 로그인</label>
+            <button type="button" class="btn btn-default" id="go_index">로그아웃</button>
+            <script>
+            $('#go_index').click(function(){
+              location.href='index.html';
+            })
+            </script>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container_search">
+        <select class="btn btn-default">
+          <option value="" selected>사원번호</option>
+          <option value="">사원명</option>
+          <option value="">부서명</option>
+          <option value="">입사날짜</option>
+        </select>
+          <input type="text" class="btn btn-default">
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          </button>
+    </div>
+
+    <div class="list_view">
+      <table class="table">
+
+            <thead>
+              <tr>
+                <th> </th>
+                <th>사번</th>
+                <th>사원명</th>
+                <th>부서명</th>
+                <th>입사날짜</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="go_detail">
+                <th>1</th>
+                <td>1001</td>
+                <td>가가가</td>
+                <td>영업부</td>
+                <td>2010-01-01</td>
+              </tr>
+              <tr id="go_detail">
+                <th>2</th>
+                <td>1002</td>
+                <td>나나나</td>
+                <td>교육부</td>
+                <td>2010-02-02</td>
+              </tr>
+              <tr id="go_detail">
+                <th>3</th>
+                <td>1003</td>
+                <td>다다다</td>
+                <td>문화부</td>
+                <td>2010-03-03</td>
+              </tr>
+              <tr id="go_detail">
+                <th>4</th>
+                <td>1004</td>
+                <td>라라라</td>
+                <td>보건복지부</td>
+                <td>2010-04-04</td>
+              </tr>
+              <tr id="go_detail">
+                <th>5</th>
+                <td>1005</td>
+                <td>마마마</td>
+                <td>오락부</td>
+                <td>2010-05-05</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <script>
+            $('#go_detail').click(function(){
+              location.href='detail.html';
+            })
+          </script>
+
+    </div>
+
+    <nav class="paging">
+    <ul class="pagination">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+    </nav>
+
+  </section>
+  <footer><small>copyright&copy;song. All rights reserved.</small></footer>
+
+</body>
+</html>
